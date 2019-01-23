@@ -341,13 +341,13 @@ footer {
 }
 
 .fixed-bar-container {
-    /* background-color: red; */
-    width: 60px;
+    width: 180px;
+    display: block;
 }
 
 .psuedo-space-creator {
     width: 60px;
-    /* background-color: yellow; */
+    background-color: red;
     display: block;
 }
 
@@ -362,6 +362,7 @@ footer {
     top: 0px;
     left: 0px;
     background-color: #0d1217;
+    /* background-color: transparent; */
 }
 
 .fixed-vertical-bar > div {
