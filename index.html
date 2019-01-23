@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
+    <script src="./scripts/controller.js"></script>
+    <script src="./scripts/main.js"></script>
     <link rel="stylesheet" href="./stylesheets/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
@@ -42,7 +44,7 @@
                 <div>
                     <h2>What's New</h2>
                 </div>
-                <div class="thumb-container">
+                <div class="thumb-container" id='gallery'>
                     <div class="thumb"><img src="./assets/images/01.jpg" alt="img1"></div>
                     <div class="thumb"><img src="./assets/images/02.jpg" alt="img2"></div>
                     <div class="thumb"><img src="./assets/images/03.jpg" alt="img3"></div>
@@ -52,7 +54,7 @@
                     <div class="thumb"><img src="./assets/images/07.jpg" alt="img7"></div>
                     <div class="thumb"><img src="./assets/images/10.jpg" alt="img8"></div>
                 </div>
-                <div><button class="btn-blue">full gallery</button></div>
+                <div><button class="btn-blue" id="add-photo-btn">add photo</button></div>
             </section>
 
 
