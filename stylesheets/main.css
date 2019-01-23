@@ -4,6 +4,7 @@
     --heading-text-color: #22313F;
     --para-color: #22313F;
     --bg-color2: #ececec;
+    --highlight-text-color: #019be3;
 
 }
 
@@ -187,6 +188,7 @@ header {
 .testimonial-section{
     display: flex;
     flex-direction: row;
+    background-color: var(--banner-bg-color1);
 }
 
 .testimonial-section > div {
@@ -213,6 +215,10 @@ header {
     color: var(--heading-text-color);
     text-transform: capitalize;
     letter-spacing: 1px;
+}
+
+span.sec2-heading{
+    letter-spacing: 0px;
 }
 
 .para {
@@ -315,6 +321,12 @@ textarea {
     margin-bottom: 10px;
 }
 
+.msg-send-btn{
+    font-size: 0.8em;
+    font-weight: ligth;
+    padding: 0.8em 1em;
+}
+
 footer {
     padding: 4em 0 2em 0;
     background: #f2f2f2;
@@ -323,3 +335,84 @@ footer {
     align-items: center;
 }
 
+.highlight{
+    color: var(--highlight-text-color);
+    text-decoration-line: underline;
+}
+
+.fixed-bar-container {
+    /* background-color: red; */
+    width: 60px;
+}
+
+.psuedo-space-creator {
+    width: 60px;
+    /* background-color: yellow; */
+    display: block;
+}
+
+.fixed-vertical-bar {
+    width: 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #0d1217;
+}
+
+.fixed-vertical-bar > div {
+    margin-top: 20px;
+}
+
+.fixed-vertical-bar > div:first-child {
+    margin-top: 60px;
+}
+
+.fixed-vertical-bar i {
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.fixed-vertical-bar i:hover {
+    color: #019be3;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width:768px){
+    .testimonial-section{
+        flex-direction: column;
+    }
+
+    .banner-heading h1 {
+        font-size: 3em;
+        white-space: nowrap;
+    }
+    
+    .banner-sub-heading span {
+        font-size: 1em;
+        color: var(--banner-text-color);
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    .thumb{
+        height: 200px;
+        width: 200px;
+    }
+
+}
+
+@media(max-width: 576px){
+    .name-email-input{
+        flex-direction: column;
+    }
+}
