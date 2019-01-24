@@ -156,6 +156,28 @@ header {
     width: 300px;
     cursor: pointer;
     overflow: hidden;
+    position: relative;
+}
+
+.thumb-details {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #ececec;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+.thumb-details h1, .thumb-details span{
+    color: var(--heading-text-color);
+    font-family: 'Nunito Sans', sans-serif; 
+    text-transform: capitalize;
+}
+
+.thumb:hover .thumb-details {
+    bottom: 0px;
 }
 
 .thumb img {
