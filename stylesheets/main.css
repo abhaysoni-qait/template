@@ -157,6 +157,13 @@ header {
     cursor: pointer;
     overflow: hidden;
     position: relative;
+    transition-duration: 0.5s;
+}
+
+.thumb:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0px 2px 10px 2px var(--heading-text-color);
+    z-index: 10;
 }
 
 .thumb-details {
@@ -178,6 +185,7 @@ header {
 
 .thumb:hover .thumb-details {
     bottom: 0px;
+    box-shadow: 0px -1px 10px 1px var(--heading-text-color);
 }
 
 .thumb img {
