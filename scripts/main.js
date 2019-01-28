@@ -4,5 +4,4 @@ window.addEventListener('load', init);
 //this method will only run  once and will do all the initialization process of our Application
 function init(){
     controller.init();
-    
 }

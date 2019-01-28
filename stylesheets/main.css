@@ -177,6 +177,12 @@ header {
     transition-duration: 0.5s;
 }
 
+.thumb-details > div {
+    white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .thumb-details h1, .thumb-details span{
     color: var(--heading-text-color);
     font-family: 'Nunito Sans', sans-serif; 
@@ -438,6 +444,14 @@ footer {
     .thumb{
         height: 200px;
         width: 200px;
+    }
+
+    .thumb-details h1{
+        font-size: 1em;
+    }
+
+    .thumb-details span{
+        font-size: 0.9em;
     }
 
 }
