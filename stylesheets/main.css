@@ -5,7 +5,7 @@
     --para-color: #22313F;
     --bg-color2: #ececec;
     --highlight-text-color: #019be3;
-
+    --fixed-bar-width: 60px;
 }
 
 body {
@@ -377,18 +377,21 @@ footer {
 }
 
 .fixed-bar-container {
-    width: 180px;
     display: block;
+    height: 100%;
+    min-height: 100vh;
+    width: var(--fixed-bar-width);
 }
 
-.psuedo-space-creator {
-    width: 60px;
-    background-color: red;
-    display: block;
+.psudeo-space-creator{
+    height: 100%;
+    min-height: 100vh;
+    width: var(--fixed-bar-width);
 }
+
 
 .fixed-vertical-bar {
-    width: 60px;
+    width: var(--fixed-bar-width);
     height: 100vh;
     display: flex;
     flex-direction: column;
